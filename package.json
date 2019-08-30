@@ -1,0 +1,27 @@
+{
+  "name": "new-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^3.1.0",
+    "react": "15.6.2",
+    "react-dom": "15.6.2",
+    "style-loader": "^0.23.1"
+  },
+  "devDependencies": {
+    "babel-core": "6.24.1",
+    "babel-loader": "7.1.0",
+    "babel-polyfill": "6.7.4",
+    "html-webpack-plugin": "3.2",
+    "webpack": "4.17",
+    "webpack-cli": "3.1.1",
+    "webpack-dev-server": "3.3"
+  },
+  "scripts": {
+    "start": "node init.js",
+    "dev": "webpack-dev-server --config webpack.config.js --output-path ./dist --output-filename init.js --port 3200 --content-base ./dist --hot"
+  }
+}

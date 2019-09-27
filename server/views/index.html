@@ -1,0 +1,17 @@
+<% include ./head.html %>
+
+  <body>
+
+    <% if (config('analytics.enabled') && config('analytics.googleTagManagerApiKey')) { %>
+      <% include ./google-tag-manager-body.html %>
+    <% } %>
+
+    <div id="app"> </div>
+
+    <% include ./expose-on-window.html %>
+
+    <% include ./js-bundles.html %>
+
+  </body>
+
+</html>
